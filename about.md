@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Anis Taluqdar
+title: About
 permalink: /about/
 ---
 <!--======-->
