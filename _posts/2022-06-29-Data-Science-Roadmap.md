@@ -17,7 +17,7 @@ My roadmap to study Data Science.
 ### Python
 #### Courses
 
-| --- | :---: | :---: | 
+
 | URL | Title | Status |
 | [Cognitiveclass](https://cognitiveclass.ai/courses/python-for-data-science) | Python for Data Science | To Do |
 | [Udemy](https://www.udemy.com/course/complete-python-developer-zero-to-mastery) | Complete Python Developer in 2022: Zero to Mastery | To Do |
