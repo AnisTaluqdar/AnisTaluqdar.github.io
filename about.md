@@ -6,8 +6,10 @@ permalink: /about/
 <!--======-->
 
 <p align="left"> 
-<img src="../images/anis.jpg" width="60"> Anis Taluqdar
+<img src="../images/anis.jpg" width="100"> <h>Anis Taluqdar</h>
 </p>
+
+
 
 #### Data enthusiast with a strong background in math, science and programming. 
 ###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ anistaluqdar@duck.com ] . [ [Matrix](https://matrix.to/#/@anis:kde.org) ]
