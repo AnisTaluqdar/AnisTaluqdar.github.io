@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This post demonstrates post content styles"
+title: "Test Post"
 categories: junk
 author:
 - Bart Simpson
@@ -101,7 +101,7 @@ Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet b
 
 Title 1               | Title 2               | Title 3               | Title 4
 --------------------- | --------------------- | --------------------- | ---------------------
-[Cognitiveclass](https://cognitiveclass.ai/courses/python-for-data-science)        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff            | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit
+lorem ipsum dolor sit | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit
 lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
 lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
 lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
