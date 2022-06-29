@@ -233,7 +233,8 @@ My roadmap to study Data Science.
 
 | --- | :---: | :---: | 
 | URL | Title | Status |
-| [Coursera](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift) | Introduction to Containers: Docker, Kubernetes & OpenShift| To Do |
+| [Coursera](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift) | Introduction to Containers: Docker, Kubernetes & OpenShift | To Do |
+
 #### Books
 
 | --- | :---: | :---: | 
@@ -305,7 +306,8 @@ My roadmap to study Data Science.
 
 | --- | :---: | :---: | 
 | URL | Title | Status |
-| [Udemy](https://www.udemy.com/course/d3jsbasics/) | D3.js Data Visualization Fundamentals - Hands On | To Do |
+| [Udemy](https://www.udemy.com/course/d3jsbasics) | D3.js Data Visualization Fundamentals - Hands On | To Do |
+
 #### Books
 
 | --- | :---: | :---: | 
