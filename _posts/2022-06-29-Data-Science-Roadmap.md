@@ -16,9 +16,9 @@ My roadmap to study Data Science.
 ## Programming
 ### Python
 #### Courses
-| URL | Title | Status |
-| :---: | --- | :---: 
+| URL | Title | Status | 
 
+| :---: | --- | :---: |
 | [Cognitiveclass](https://cognitiveclass.ai/courses/python-for-data-science) | Python for Data Science | To Do |
 | [Udemy](https://www.udemy.com/course/complete-python-developer-zero-to-mastery) | Complete Python Developer in 2022: Zero to Mastery | To Do |
 | [DataCamp](https://www.datacamp.com/tracks/python-programmer) | Python Programmer | To Do |
@@ -28,6 +28,7 @@ My roadmap to study Data Science.
 
 #### Books
 | Title | Author | Status |
+
 | --- | :---: | :---: |
 | Data Analysis From Scratch With Python | Peters Morgan | *In Progress* |
 
@@ -35,6 +36,7 @@ My roadmap to study Data Science.
 #### Courses
 | URL | Title | Status |
 | :---: | --- | :---: |
+
 | [DataCamp](https://www.datacamp.com/tracks/r-programmer) | R Programmer | To Do |
 
 ### Scala
