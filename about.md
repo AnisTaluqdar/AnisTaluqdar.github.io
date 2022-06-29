@@ -6,7 +6,7 @@ permalink: /about/
 <!--======-->
 
 <p align="left"> 
-<img src="../images/anis.jpg" width="100"> <h>Anis Taluqdar</h>
+<img src="../images/anis.jpg" width="100"> <font size="6">Anis Taluqdar</font>
 </p>
 
 
