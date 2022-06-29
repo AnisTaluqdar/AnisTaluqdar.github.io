@@ -21,10 +21,6 @@ Education
 
 - 0.00/4.0 GPA-->
 
-**MOOCs** 
-
-- Machine Learning (Stanford, Andrew Ng) - (ongoing)
-
 Experience
 ----------
 <!--**Independent Researcher, Yale University** (2012-present, New Haven CT)
@@ -46,12 +42,6 @@ Awards
 <!--- **Sterling Prize Fellowship**, Yale University (2013). Awarded to 30 out of 10,500 applicants.
 - **IU Founders Scholar**, Indiana University (2012)
 - **Baccalaureate with Highest Distinction**, Indiana University (2012). Granted to 5 students out of 498 in the class.-->
-
-Projects
---------
-<!--**[*Evening Sessions: Explorations in Data Science and Python* Blog](http://anistaluqdar.github.io/blog/output/index.html)** (2015-present)
-
-- Authored a series of articles covering a wide variety of topics and tools related to pure Python programming, data science and statistics. --> 
 
 Theses
 ------
