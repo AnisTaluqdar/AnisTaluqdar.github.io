@@ -3,7 +3,7 @@ layout: page
 title: Anis Taluqdar
 permalink: /about/
 ---
-======
+<!--======-->
 
 #### Data enthusiast with a strong background in math, science and programming. 
 ###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ anistaluqdar@duck.com ] . [ [Matrix](https://matrix.to/#/@anis:kde.org) ]
