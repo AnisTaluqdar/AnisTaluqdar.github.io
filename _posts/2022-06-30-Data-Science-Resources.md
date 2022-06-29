@@ -15,7 +15,7 @@ My Data Science Resources.
 
 ## Basic Intorduction
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 | [elementsofai](https://course.elementsofai.com/1) | What is AI? | **Completed**  |
 | [elementsofai](https://course.elementsofai.com/2) | AI problem solving | **Completed**  |
@@ -28,14 +28,14 @@ My Data Science Resources.
 
 ## Tools
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 | [pydata](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials) | Getting started with pandas tutorials | **Completed** |
 
 
 ## Artificial Intelligence
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 
 
@@ -43,14 +43,14 @@ My Data Science Resources.
 
 ## Machine Learning
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 
 
 
 ## Deep Learning
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 
 
@@ -58,7 +58,7 @@ My Data Science Resources.
 
 ## Natural Language Processing
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 
 
@@ -66,14 +66,14 @@ My Data Science Resources.
 
 ## Big Data
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 
 
 
 ## Data Engineering
 
-| :---: | --- | :---: |
+
 | URL | Title | Status |
 
 
