@@ -6,9 +6,8 @@ permalink: /about/
 <!--======-->
 
 <p align="left"> 
-<img src="../images/anis.jpg" width="100"> <font size="6">  Anis Taluqdar </font>
+<img src="../images/anis.jpg" width="100"> <font size="6", color='blue'>  Anis Taluqdar </font>
 </p>
-
 
 
 #### Data enthusiast with a strong background in math, science and programming. 
