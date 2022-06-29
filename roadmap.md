@@ -1,6 +1,6 @@
 ---
 layout: page
-title: roadmap
+title: Roadmap
 permalink: /roadmap/
 ---
 
