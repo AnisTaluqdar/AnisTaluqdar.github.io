@@ -97,7 +97,7 @@ permalink: /roadmap/
 
 | URL | Title | Status |
 | [10 Minute School](https://www.youtube.com/watch?v=btNmS1Nr1cs&list=PL1pf33qWCkmgc6rGuQgzxysbr6_FaFJ6F) | Introduction to Statistics **( Bangla )** | **Completed** |
-| [ 10 Minute School Class 1-12 ](https://www.youtube.com/watch?v=td4coszSjMw&list=PLuaHF6yUT-72oenuo84k1B-I6ZdVygOxI) | Statistics 1st Paper - HSC **( Bangla )** | *In Progress* |
+| [ 10 Minute School Class 1-12 ](https://www.youtube.com/watch?v=qULK1Tr_UyM&list=PLuaHF6yUT-72hBLc5sSQbBJunWULspeOZ) | Statistics 1st Paper - HSC **( Bangla )** | *In Progress* |
 
 ### Books
 
