@@ -51,7 +51,7 @@ minima:
 header_pages:
  - projects.md
  - MOOCs.md
- - roadmap.md
+ - resources.md
  - about.md
 
 # Build settings

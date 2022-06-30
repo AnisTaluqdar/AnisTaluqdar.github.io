@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Roadmap
-permalink: /roadmap/
+title: Resources
+permalink: /resources/
 ---
 
 # Basic Intorduction
