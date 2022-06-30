@@ -13,17 +13,17 @@ permalink: /about/
 #### Data enthusiast with a strong background in math, science and programming. 
 ###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ anistaluqdar@duck.com ] . [ [Matrix](https://matrix.to/#/@anis:kde.org) ]
 
-Education
+<!--Education
 ---------
 
 
-<!--**B.S. in Computer Science, University** (2017-2022)
+**B.S. in Computer Science, University** (2017-2022)
 
 - 0.00/4.0 GPA-->
 
-Experience
+<!--Experience
 ----------
-<!--**Independent Researcher, Yale University** (2012-present, New Haven CT)
+**Independent Researcher, Yale University** (2012-present, New Haven CT)
 
 - Data analysis and simulation in Python and MATLAB, and instrument control in C++. Designed and executed experiments across four projects and managed several undegraduate students.
 
@@ -37,9 +37,9 @@ Skills
 
 **Python Tools:** Pandas, Numpy, Matplotlib, Scikit-learn, OpenCV, Keras, Tensorflow
 
-Awards
+<!--Awards
 ------
-<!--- **Sterling Prize Fellowship**, Yale University (2013). Awarded to 30 out of 10,500 applicants.
+- **Sterling Prize Fellowship**, Yale University (2013). Awarded to 30 out of 10,500 applicants.
 - **IU Founders Scholar**, Indiana University (2012)
 - **Baccalaureate with Highest Distinction**, Indiana University (2012). Granted to 5 students out of 498 in the class.-->
 
