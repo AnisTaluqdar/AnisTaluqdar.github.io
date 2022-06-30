@@ -92,9 +92,11 @@ permalink: /roadmap/
 
 | URL | Title | Status |
 
+
 ### Videos
 
 | URL | Title | Status |
+| [10 Minute School](https://www.youtube.com/watch?v=btNmS1Nr1cs&list=PL1pf33qWCkmgc6rGuQgzxysbr6_FaFJ6F) | Introduction to Statistics **( Bangla )** | *In Progress* |
 
 ### Books
 
