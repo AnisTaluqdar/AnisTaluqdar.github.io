@@ -4,7 +4,9 @@ title: Roadmap
 permalink: /roadmap/
 ---
 
-## Basic Intorduction
+# Basic Intorduction
+
+### Reading
 
 | URL | Title | Status |
 | [elementsofai](https://course.elementsofai.com/1) | What is AI? | **Completed**  |
@@ -14,12 +16,7 @@ permalink: /roadmap/
 | [elementsofai](https://course.elementsofai.com/5) | Neural networks | **Completed**  |
 | [elementsofai](https://course.elementsofai.com/6) | Implications | **Completed**  |
 
-### Books
-
-| Title | Author | Status |
-
-
-## Basic Programming 
+### Videos
 
 | URL | Title | Status |
 
@@ -28,7 +25,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Basic Math
+# Basic Programming
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -37,17 +40,29 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Tools
+# Basic Math
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
+
+| URL | Title | Status |
+
+### Books
+
+| Title | Author | Status |
+
+
+# Tools
+
+### Reading
 
 | URL | Title | Status |
 | [pydata](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials) | Getting started with pandas tutorials | **Completed** |
 
-### Books
-
-| Title | Author | Status |
-
-
-## Machine Learning
+### Videos
 
 | URL | Title | Status |
 
@@ -56,7 +71,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Statistics
+# Machine Learning
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -65,7 +86,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Deep Learning
+# Statistics
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -74,7 +101,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Linear algebra
+# Deep Learning
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -83,7 +116,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Calculus
+# Linear algebra
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -92,7 +131,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Data Engineering
+# Calculus
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -101,7 +146,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## SQL
+# Data Engineering
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -110,7 +161,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Artificial Intelligence
+# SQL
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -119,7 +176,13 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Natural Language Processing
+# Artificial Intelligence
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 
@@ -128,7 +191,28 @@ permalink: /roadmap/
 | Title | Author | Status |
 
 
-## Big Data
+# Natural Language Processing
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
+
+| URL | Title | Status |
+
+### Books
+
+| Title | Author | Status |
+
+
+# Big Data
+
+### Reading
+
+| URL | Title | Status |
+
+### Videos
 
 | URL | Title | Status |
 

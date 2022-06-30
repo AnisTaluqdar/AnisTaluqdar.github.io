@@ -33,7 +33,7 @@ Experience
 
 Skills
 ------
-**Programming:** Python, Java, C, Prolog, Octave, SQL, R, git, HTML/CSS, Linux
+**Programming:** Python, Java, C, Prolog, Octave, SQL, R, git
 
 **Python Tools:** Pandas, Numpy, Matplotlib, Scikit-learn, OpenCV, Keras, Tensorflow
 
