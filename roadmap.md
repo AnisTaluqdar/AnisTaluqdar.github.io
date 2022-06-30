@@ -76,6 +76,7 @@ permalink: /roadmap/
 ### Reading
 
 | URL | Title | Status |
+| [Zerotomastery](https://academy.zerotomastery.io/p/complete-machine-learning-and-data-science-bootcamp-zero-to-mastery) | Complete Machine Learning and Data Science: Zero to Mastery | *In Progress* |
 
 ### Videos
 
