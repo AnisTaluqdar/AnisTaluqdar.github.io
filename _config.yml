@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "show_excerpts:"
    Focusing on Emerging Technology, Statistics, Big Data, Data Science, Machine Learning, Deep Learning, AI and more.
 
 
-show_excerpts: true # set to true to show excerpts on the homepage
+show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
