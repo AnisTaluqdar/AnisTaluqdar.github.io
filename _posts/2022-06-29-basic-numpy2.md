@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: "Numpy"
+categories: Roadmap
+author:
+- Anis Taluqdar
+meta: "Springfield"
+---
 
 
 
