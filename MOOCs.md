@@ -1,6 +1,5 @@
 ---
 layout: page
-title: keybase.txt
 permalink: /keybase.txt/
 ---
 ==================================================================
