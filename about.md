@@ -11,7 +11,7 @@ permalink: /about/
 
 
 #### Data enthusiast with a strong background in math, science and programming. 
-###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Matrix](https://matrix.to/#/@anis:kde.org) ]
+###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Matrix](https://matrix.to/#/@anis:kde.org) ] . [ [Signal](https://signal.me/#p/+46731295363) ]
 
 <!--Education
 ---------
