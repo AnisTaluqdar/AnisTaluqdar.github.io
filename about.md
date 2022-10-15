@@ -11,7 +11,7 @@ permalink: /about/
 
 
 #### Data enthusiast with a strong background in math, science and programming. 
-###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Signal](https://signal.me/#p/+46731295363) ]
+###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ]
 
 <!--Education
 ---------
