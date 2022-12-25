@@ -33,7 +33,7 @@ As fit_transform() scaling learns the parameter of data and scales it. We want t
 
 ## Example:
 
-```
+{% highlight python %}
 from sklearn.preprocessing import StandardScaler
 
 # Create a StandardScaler instance
@@ -53,5 +53,4 @@ model.fit(X_train_scaled, y_train)
 
 # And evaluate the model on the transformed test data
 model.score(X_test_scaled, y_test)
-
-```
+{% endhighlight %}
