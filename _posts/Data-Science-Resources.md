@@ -7,9 +7,7 @@ author:
 meta: "Springfield"
 ---
 
-<p align="center"> 
-<img src="https://miro.medium.com/max/1400/1*Bk-9JVpNRyv8qSMOy9XIrA.png" width="600">
-</p>
+
 
 My Data Science Resources.
 
