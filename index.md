@@ -7,7 +7,7 @@
 layout: home
 ---
 <p align="left"> 
-<img src="../images/anis.jpg" width="100"> &nbsp; Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️. </p>
+<img src="../images/anis.jpg" width="100"><font size="1" color='green'> &nbsp; Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</font> </p>
 
 
 ### 💼 Get In Touch 
