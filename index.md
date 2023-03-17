@@ -13,6 +13,8 @@
 
 ## 💼 Get In Touch 
 
+---
+
 ###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ]
 
 
@@ -35,7 +37,7 @@
 - Planned and delivered lectures on core content in undergraduate Physics, Chemistry and Biology to medium-sized groups of undergraduates.-->
 
 Skills
-------
+---
 **Programming:** Python, Java, C, Prolog, Octave, SQL, R, git
 
 **Python Tools:** Pandas, Numpy, Matplotlib, Scikit-learn, OpenCV, Keras, Tensorflow
@@ -47,11 +49,11 @@ Skills
 - **Baccalaureate with Highest Distinction**, Indiana University (2012). Granted to 5 students out of 498 in the class.-->
 
 Theses
-------
+---
 - **DeepFake Detection by Deep Learning**, A thesis submitted to the Department of Computer Science & Engineering for the partial fulfillment of the degree of Bachelor of Science in Computer Science & Engineering.
 
 Conference Papers
------------------
+---
 - **A new approach to detect deepfake video using multi-input convolutional neural network** , 2022 4th International Conference on Sustaiable Technologies for Industry 4.0 (Paper ID 5830).
   - with best paper award 
 
