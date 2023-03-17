@@ -26,9 +26,9 @@ website:
      creator: "@AnisTaluqdar"
   site-url: "https://anistaluqdar.github.io"
   description: "A collection of blogs and talks on machine learning and data science."
-  repo-url: https://github.com/anistaluqdar/anistaluqdar.github.io
-  repo-actions: false
-  repo-branch: false
+  #repo-url: https://github.com/anistaluqdar/anistaluqdar.github.io
+  #repo-actions: false
+  #repo-branch: false
   navbar:
     title: false
     background: dark
