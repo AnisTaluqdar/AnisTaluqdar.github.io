@@ -12,7 +12,7 @@ layout: home
 
 ### 💼 Get In Touch 
 
-### [ [Kaggle](https://www.kaggle.com anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ]
+### [ [Kaggle](https://www.kaggle.com anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ] . [ [YouTube](https://www.youtube.com/@anistaluqdar) ]
 
 
 ### 📮 Blog Posts
