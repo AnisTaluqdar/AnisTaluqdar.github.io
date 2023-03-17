@@ -5,14 +5,11 @@
 # To change the home page layout, edit the _layouts/home.html file.
 #
 #layout: home
-#---
+---
 <p align="left"> 
 <img src="../images/anis.jpg" width="100">    &nbsp; Data enthusiast with a strong background in math, science and programming </font>
 </p>
 
-#<font size="6" color='green'>
-
-#### Data enthusiast with a strong background in math, science and programming. 
 
 ## 💼 Get In Touch 
 
