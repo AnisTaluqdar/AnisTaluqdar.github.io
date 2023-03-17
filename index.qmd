@@ -22,7 +22,7 @@ format:
 
 ::: {layout="[21,79]" .profile-header}
 
-![](hamel_transparent.png){.profile-pic}
+![](aniss.jpg){.profile-pic}
 
 Hello, I'm Anis Taluqdar. I'm a machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.  
 
