@@ -1,4 +1,4 @@
-# Anis
+# Ans
 Repo for Anis's Professional Website
 
 https://anistaluqdar.github.io
