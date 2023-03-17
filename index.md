@@ -7,15 +7,14 @@
 #layout: home
 ---
 <p align="left"> 
-<img src="../images/anis.jpg" width="100">    &nbsp; Data enthusiast with a strong background in math, science and programming </font>
-</p>
+<img src="../images/anis.jpg" width="100">    &nbsp; Data enthusiast with a strong background in math, science and programming </p>
 
 
 ## 💼 Get In Touch 
 
 ---
 
-###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ]
+### [ [Kaggle](https://www.kaggle.com anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ]
 
 
 <!--Education
