@@ -31,7 +31,7 @@ format:
 
 ::: {layout="[21,79]" .profile-header}
 
-![](hamel_transparent.png){.profile-pic}
+![](AnisTaluqdar/AnisTaluqdar.github.io/images/anis.jpg){.profile-pic}
 
 Hello, ghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhm
 
