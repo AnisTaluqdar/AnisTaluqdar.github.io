@@ -44,4 +44,7 @@ Email me at `anistaluqdar@duck.com`, or DM me on [![](icon-linkedin.png){width="
 ::: {#blog-listings}
 :::
 
+## 📬 Subscribe
+
+Subscribe via [<i class="bi bi-rss"></i> RSS](index.xml) or enter your email below:
 
