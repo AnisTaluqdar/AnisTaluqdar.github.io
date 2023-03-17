@@ -12,13 +12,8 @@
 
 ## 💼 Get In Touch 
 
----
-
 ### [ [Kaggle](https://www.kaggle.com anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ]
 
-
-
----
 
 ## 📮 Blog Posts
 

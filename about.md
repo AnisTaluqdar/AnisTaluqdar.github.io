@@ -5,15 +5,6 @@ permalink: /about/
 ---
 <!--======-->
 
-<p align="left"> 
-<img src="../images/anis.jpg" width="100">   <font size="6" color='green'>  &nbsp; Anis Taluqdar </font>
-</p>
-
-
-#### Data enthusiast with a strong background in math, science and programming. 
-###### [ [Kaggle](https://www.kaggle.com/anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ] . [ [Tableau](https://public.tableau.com/app/profile/anistaluqdar) ]
-
-
 <!--Education
 ---------
 
