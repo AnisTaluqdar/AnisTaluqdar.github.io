@@ -7,7 +7,7 @@
 #layout: home
 #---
 
----
+#---
 sidebar: false
 description: "A collection of technical blogs and talks on machine learning and data science."
 image: quarto.png
