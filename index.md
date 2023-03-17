@@ -4,7 +4,7 @@
 # between the top bar and the list of recent posts.
 # To change the home page layout, edit the _layouts/home.html file.
 #
-#layout: home
+layout: home
 ---
 <p align="left"> 
 <img src="../images/anis.jpg" width="100">    &nbsp; Data enthusiast with a strong background in math, science and programming </p>
