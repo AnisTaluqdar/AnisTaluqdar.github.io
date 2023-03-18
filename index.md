@@ -10,7 +10,7 @@ layout: home
 <img src="../images/anis.jpg" width="100"><font size="5" color='green'> &nbsp; Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</font> </p>
 
 
-<img src="../images/anis.jpg" alt="" width="100" height="100" id="hp"/> kdfdflgldflgdflkgdflgldflgdflgdflfgjgjgfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+<img src="../images/anis.jpg" alt="" width="100" height="100" id="hp"/>kdfdflgldflgdflkgdflgld flgdflgdflfgjgjgfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 
 
 ### 💼 Get In Touch 
