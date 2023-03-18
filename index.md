@@ -6,10 +6,12 @@
 #
 layout: home
 ---
-<p> <font size="5" color='green'> &nbsp; Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</font>
-<img align="right" src="../images/anis.jpg" width="100"> </p>
+<Body>  
+<p> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.
+<img align="left" src="../images/anis.jpg" width="100"> </p>
+</Body>  
 
-
+#<font size="5" color='green'> &nbsp; </font>
 
 
 ### 💼 Get In Touch 
