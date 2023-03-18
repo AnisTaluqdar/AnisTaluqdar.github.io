@@ -6,8 +6,8 @@
 #
 layout: home
 ---
-
-<img src="../images/anis.jpg" style = "float: left" width="100"/> <p> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</p>
+<p> 
+<img src="../images/anis.jpg" style = "float: left" width="100"/> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</p>
 
 
 
