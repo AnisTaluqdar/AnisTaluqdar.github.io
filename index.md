@@ -6,7 +6,7 @@
 #
 layout: home
 ---
-<Body>  
+<Body>                                                                                                              
 <p> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.
 <img align="left" src="../images/anis.jpg" width="100"> </p>
 </Body>  
