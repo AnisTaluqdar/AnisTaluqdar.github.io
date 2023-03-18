@@ -6,8 +6,15 @@
 #
 layout: home
 ---
+<style> 
+  .image-spacing { 
+    margin-right: 10px; 
+    float: left;
+  } 
+</style>
+
 <p> 
-<img src="../images/anis.jpg" style = "float: left" width="100" margin: 25px 10px/> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️. <br><br><br></p>
+<img src="../images/anis.jpg" class="image-spacing"  width="100" /> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️. <br><br><br></p>
 
 
 
