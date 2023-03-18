@@ -9,6 +9,13 @@ layout: home
 <p align="left"> 
 <img src="../images/anis.jpg" width="100"><font size="5" color='green'> &nbsp; Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</font> </p>
 
+#hp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+
+<img src="../images/anis.jpg" alt="" width="100" height="100" id="hp"/> kdfdflgldflgdflkgdflgldflgdflgdfl
+
 
 ### 💼 Get In Touch 
 
