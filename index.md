@@ -6,11 +6,11 @@
 #
 layout: home
 ---
-<Body>                                          
-<p> <br><br><br><br> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.
-<img align="left" src="../images/anis.jpg" width="100"> </p>
-</Body> 
-<br><br><br><br><br>
+
+<img src="../images/anis.jpg" style = "float: left" width="100"/> <p> Data enthusiast with a strong background in math, science and programming. Machine learning engineer who loves building data-science and developer tools 👷🏼‍♂️.</p>
+
+
+
 ### 💼 Get In Touch 
 
 ### [ [Kaggle](https://www.kaggle.com anistaluqdar) ] . [ [Github](https://github.com/AnisTaluqdar) ] . [ [Twitter](https://twitter.com/AnisTaluqdar) ] . [ [Linkedin](https://www.linkedin.com/in/anistaluqdar) ] . [ [YouTube](https://www.youtube.com/@anistaluqdar) ]
