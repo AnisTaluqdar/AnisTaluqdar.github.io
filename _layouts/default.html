@@ -1,11 +1,3 @@
-
-<style> 
-  .zoom {
-  zoom: 150%;
-  } 
-</style>
-
-
 <!DOCTYPE html>
 
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
@@ -13,8 +5,7 @@
   {%- include head.html -%}
 
   <body>
-    class="zoom"
-
+    
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
@@ -22,7 +13,6 @@
         {{ content }}
       </div>
     </main>
-
     {%- include footer.html -%}
 
   </body>
