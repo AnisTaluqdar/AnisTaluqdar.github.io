@@ -15,90 +15,90 @@ meta: "Springfield"
 5.  Modelling
 6.  Experimentation
 
-    import pandas as pd
-    
-    import matplotlib.pyplot as plt
+import pandas as pd
 
-    df = pd.read_csv("E:\VSCode\zero-to-mastery-ml\data\car-sales-extended.csv")
+import matplotlib.pyplot as plt
 
-    df
+df = pd.read_csv("E:\VSCode\zero-to-mastery-ml\data\car-sales-extended.csv")
 
-           Make Colour  Odometer (KM)  Doors  Price
+df
 
-    0     Honda  White          35431      4  15323
+Make Colour  Odometer (KM)  Doors  Price
 
-    1       BMW   Blue         192714      5  19943
+0     Honda  White          35431      4  15323
 
-    2     Honda  White          84714      4  28343
+1       BMW   Blue         192714      5  19943
 
-    3    Toyota  White         154365      4  13434
+2     Honda  White          84714      4  28343
 
-    4    Nissan   Blue         181577      3  14043
+3    Toyota  White         154365      4  13434
 
-    ..      ...    ...            ...    ...    ...
+4    Nissan   Blue         181577      3  14043
 
-    995  Toyota  Black          35820      4  32042
+..      ...    ...            ...    ...    ...
 
-    996  Nissan  White         155144      3   5716
+995  Toyota  Black          35820      4  32042
 
-    997  Nissan   Blue          66604      4  31570
+996  Nissan  White         155144      3   5716
 
-    998   Honda  White         215883      4   4001
+997  Nissan   Blue          66604      4  31570
 
-    999  Toyota   Blue         248360      4  12732
+998   Honda  White         215883      4   4001
 
-    [1000 rows x 5 columns]
+999  Toyota   Blue         248360      4  12732
 
-    df.info()
+[1000 rows x 5 columns]
 
-    <class 'pandas.core.frame.DataFrame'>
+df.info()
 
-    RangeIndex: 1000 entries, 0 to 999
+<class 'pandas.core.frame.DataFrame'>
 
-    Data columns (total 5 columns):
+RangeIndex: 1000 entries, 0 to 999
 
-     #   Column         Non-Null Count  Dtype 
+Data columns (total 5 columns):
 
-    ---  ------         --------------  ----- 
+#   Column         Non-Null Count  Dtype 
 
-     0   Make           1000 non-null   object
+---  ------         --------------  ----- 
 
-     1   Colour         1000 non-null   object
+0   Make           1000 non-null   object
 
-     2   Odometer (KM)  1000 non-null   int64 
+1   Colour         1000 non-null   object
 
-     3   Doors          1000 non-null   int64 
+2   Odometer (KM)  1000 non-null   int64 
 
-     4   Price          1000 non-null   int64 
+3   Doors          1000 non-null   int64 
 
-    dtypes: int64(3), object(2)
+4   Price          1000 non-null   int64 
 
-    memory usage: 39.2+ KB
+dtypes: int64(3), object(2)
 
-    df.isna().sum()
+memory usage: 39.2+ KB
 
-    Make             0
+df.isna().sum()
 
-    Colour           0
+Make             0
 
-    Odometer (KM)    0
+Colour           0
 
-    Doors            0
+Odometer (KM)    0
 
-    Price            0
+Doors            0
 
-    dtype: int64
+Price            0
 
-    df.dtypes
+dtype: int64
 
-    Make             object
+df.dtypes
 
-    Colour           object
+Make             object
 
-    Odometer (KM)     int64
+Colour           object
 
-    Doors             int64
+Odometer (KM)     int64
 
-    Price             int64
+Doors             int64
 
-    dtype: object
+Price             int64
+
+dtype: object
