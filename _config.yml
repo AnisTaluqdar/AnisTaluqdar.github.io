@@ -1,4 +1,4 @@
-title: Learn, Practice, Apply
+title: Anis Taluqdar
 author:
   name: Anis Taluqdar
   email: anistaluqdar@duck.com
@@ -14,7 +14,7 @@ minima:
   date_format: "%-d %b, %Y"
 
   # generate social links in footer
-  #social_links:
+  social_links:
     #twitter: 
     #github: 
     # devto: 
@@ -24,7 +24,7 @@ minima:
     # instagram: 
     # linkedin: 
     # pinterest: 
-    # youtube: 
+    youtube: https://www.youtube.com/@AnisTaluqdar
     # youtube_channel: 
     # youtube_channel_name: 
     # telegram: 
