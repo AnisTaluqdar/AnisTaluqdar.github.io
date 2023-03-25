@@ -1,0 +1,664 @@
+---
+layout: post
+title: "Basic Python for Data Science"
+categories: Python
+author:
+- Anis Taluqdar
+meta: "Springfield"
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>248972</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="1-comment-in-python" class="cell markdown">
+<h1>1. Comment in Python</h1>
+</section>
+<div class="cell markdown">
+<p>A comment is a piece of text that is added to the code for documentation or clarification purposes. Comments are ignored by the Python interpreter and are not executed as part of the program. They are used to make the code more readable and understandable for humans who are reading and maintaining the code.</p>
+<p>Comments in Python start with the # symbol and continue until the end of the line. For example:</p>
+</div>
+<div class="cell code" data-execution_count="1">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>) <span class="co"># This is another comment</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Hello, World!
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>In the above example, the first line is a comment, and it is ignored by the Python interpreter. The second line is a code that prints the message "Hello, World!", but the part of the line after the # symbol is a comment and is also ignored by the interpreter.</p>
+<p>You can also create multiline comments in Python by using triple quotes ''' or """. For example:</p>
+</div>
+<div class="cell code" data-execution_count="2">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">This is a multiline comment in Python.</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">It can span across multiple lines.</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Hello, World!
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>In the above example, the first three lines are a multiline comment, and they are ignored by the Python interpreter. The fourth line is a code that prints the message "Hello, World!" and is executed by the interpreter.</p>
+</div>
+<section id="2-variable-in-python" class="cell markdown">
+<h1>2. Variable in Python</h1>
+</section>
+<div class="cell markdown">
+<p>A variable is a name that refers to a value or an object in memory. It is a way to store and access data in a program. When you create a variable in Python, you assign a name to a value, which can be a number, a string, a list, a dictionary, or any other data type.</p>
+<p>To create a variable in Python, you simply choose a name for the variable and assign a value to it using the equal sign (=). For example, the following code creates a variable called "x" and assigns it the value of 5:</p>
+</div>
+<div class="cell markdown">
+<p>x = 5</p>
+</div>
+<div class="cell markdown">
+<p>You can then use the variable in your code to perform operations or manipulate the data. For example, you can add 2 to the value of x and assign the result to a new variable called "y" like this:</p>
+</div>
+<div class="cell code" data-execution_count="3">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span></code></pre></div>
+<div class="output error" data-ename="NameError" data-evalue="name &#39;x&#39; is not defined">
+<pre><code>---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[3], line 1
+----&gt; 1 y = x + 2
+
+NameError: name &#39;x&#39; is not defined
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>The value of y will be 7, because it is the result of adding 2 to the value of x (which is 5).</p>
+<p>Variables in Python are dynamic, meaning that you can change the value of a variable at any time by assigning a new value to it. For example, you can change the value of x from 5 to 10 like this:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Now the value of x is 10, and any operation or manipulation that uses x will use the new value.</p>
+</div>
+<section id="3-data-types-in-python" class="cell markdown">
+<h1>3. Data Types in Python</h1>
+</section>
+<div class="cell markdown">
+<p>A data type is a classification that determines the type of data that a variable or expression can hold. Python supports several built-in data types, including:</p>
+</div>
+<div class="cell markdown">
+<ol>
+<li>Numeric Types: <code>int</code>, <code>float</code>, <code>complex</code> Numeric types represent numbers in Python. <code>int</code> represents integer numbers, <code>float</code> represents decimal numbers, and complex represents <code>complex</code> numbers.</li>
+</ol>
+<p>Example:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span>  <span class="co"># int</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="fl">3.14</span>  <span class="co"># float</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">2</span> <span class="op">+</span> <span class="ot">3j</span>  <span class="co"># complex</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;int&#39;&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(b))  <span class="co"># Output: &lt;class &#39;float&#39;&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(c))  <span class="co"># Output: &lt;class &#39;complex&#39;&gt;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;complex&#39;&gt;
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<ol>
+<li>Boolean Type: <code>bool</code> The Boolean type represents a value that is either True or False.</li>
+</ol>
+<p>Example:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;bool&#39;&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(b))  <span class="co"># Output: &lt;class &#39;bool&#39;&gt;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;bool&#39;&gt;
+&lt;class &#39;bool&#39;&gt;
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<ol>
+<li>Sequence Types: <code>list</code>, <code>tuple</code>, <code>range</code> Sequence types represent ordered collections of items. <code>list</code> and <code>tuple</code> are used to store a collection of items of any type but, <code>lists</code> are mutable and <code>tuple</code> are immutable, and <code>range</code> is used to generate a sequence of numbers.</li>
+</ol>
+<p>Example:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]  <span class="co"># list</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> (<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)  <span class="co"># tuple</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">2</span>)  <span class="co"># range</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;list&#39;&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(b))  <span class="co"># Output: &lt;class &#39;tuple&#39;&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(c))  <span class="co"># Output: &lt;class &#39;range&#39;&gt;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;list&#39;&gt;
+&lt;class &#39;tuple&#39;&gt;
+&lt;class &#39;range&#39;&gt;
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<ol>
+<li>Set Types: <code>set</code>, <code>frozenset</code> Set types represent unordered collections of unique items. <code>set</code> is mutable, while <code>frozenset</code> is immutable.</li>
+</ol>
+<p>Example:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}  <span class="co"># set</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">frozenset</span>({<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>})  <span class="co"># frozenset</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;set&#39;&gt;</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(b))  <span class="co"># Output: &lt;class &#39;frozenset&#39;&gt;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;set&#39;&gt;
+&lt;class &#39;frozenset&#39;&gt;
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<ol>
+<li>Mapping Type: <code>dict</code> The mapping type represents a collection of key-value pairs, where each key is unique.</li>
+</ol>
+<p>Example:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> {<span class="st">&quot;name&quot;</span>: <span class="st">&quot;John&quot;</span>, <span class="st">&quot;age&quot;</span>: <span class="dv">30</span>, <span class="st">&quot;city&quot;</span>: <span class="st">&quot;New York&quot;</span>}  <span class="co"># dict</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;dict&#39;&gt;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;dict&#39;&gt;
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<ol>
+<li>Binary Types: <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code> Binary types represent sequences of bytes. <code>bytes</code> and <code>bytearray</code> are used to store a sequence of bytes, and <code>memoryview</code> is used to access the memory of a byte buffer.</li>
+</ol>
+<p>Example:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="st">b&#39;hello&#39;</span>  <span class="co"># bytes</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">bytearray</span>(<span class="st">b&#39;world&#39;</span>)  <span class="co"># bytearray</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">memoryview</span>(b)  <span class="co"># memoryview</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;bytes&#39;&gt;</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(b))  <span class="co"># Output: &lt;class &#39;bytearray&#39;&gt;</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(c))  <span class="co"># Output: &lt;class &#39;memoryview&#39;&gt;</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;bytes&#39;&gt;
+&lt;class &#39;bytearray&#39;&gt;
+&lt;class &#39;memoryview&#39;&gt;
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Python is a dynamically typed language, which means that you don't have to explicitly declare the data type of a variable. The data type of a variable is inferred from the value that is assigned to it.</p>
+</div>
+<section id="4-operators-in-python" class="cell markdown">
+<h1>4. Operators in Python</h1>
+</section>
+<div class="cell markdown">
+<p>Operators are special symbols or characters that allow you to perform operations on values or variables. Python supports a wide range of operators, including arithmetic operators, comparison operators, assignment operators, logical operators, and bitwise operators. Here's a brief overview of each type of operator:</p>
+</div>
+<div class="cell markdown">
+<p>Arithmetic operators: These operators are used to perform mathematical operations such as addition, subtraction, multiplication, division, modulus, and exponentiation. Examples of arithmetic operators in Python include +, -, *, /, %, and **.</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">+</span> y)    <span class="co"># Output: 15      # Addition</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">-</span> y)    <span class="co"># Output: 5       # Subtraction</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">*</span> y)    <span class="co"># Output: 50      # Multiplication</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">/</span> y)    <span class="co"># Output: 2.0     # Division</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">%</span> y)    <span class="co"># Output: 0       # Modulus</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">**</span> y)   <span class="co"># Output: 100000  # Exponentiation</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>15
+5
+50
+2.0
+0
+100000
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Comparison operators: These operators are used to compare values or variables and return a Boolean value (True or False) based on the comparison result. Examples of comparison operators in Python include ==, !=, &gt;, &lt;, &gt;=, and &lt;=.</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">==</span> y)   <span class="co"># Output: False  # Equals to</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">!=</span> y)   <span class="co"># Output: True   # Not equals to</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&gt;</span> y)    <span class="co"># Output: True   # Greater than</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&lt;</span> y)    <span class="co"># Output: False  # Less than</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&gt;=</span> y)   <span class="co"># Output: True   # Greater than or equal to</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&lt;=</span> y)   <span class="co"># Output: False  # Less than or equal to</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>False
+True
+True
+False
+True
+False
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Assignment operators: These operators are used to assign values to variables. Examples of assignment operators in Python include =, +=, -=, *=, /=, and %=.</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">+=</span> <span class="dv">5</span>      <span class="co"># Same as x = x + 5</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)    <span class="co"># Output: 15  </span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">-=</span> <span class="dv">3</span>      <span class="co"># Same as x = x - 3</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)    <span class="co"># Output: 12</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">*=</span> <span class="dv">2</span>      <span class="co"># Same as x = x * 2</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)    <span class="co"># Output: 24</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">/=</span> <span class="dv">4</span>      <span class="co"># Same as x = x / 4</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)    <span class="co"># Output: 6.0</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>x <span class="op">%=</span> <span class="dv">2</span>      <span class="co"># Same as x = x % 2</span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)    <span class="co"># Output: 0.0</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>15
+12
+24
+6.0
+0.0
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Logical operators: These operators are used to perform logical operations on Boolean values (True or False). Examples of logical operators in Python include and, or, and not.</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&gt;</span> <span class="dv">3</span> <span class="kw">and</span> y <span class="op">&lt;</span> <span class="dv">5</span>) <span class="co"># And         # Output: True</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&gt;</span> <span class="dv">3</span> <span class="kw">or</span> y <span class="op">&gt;</span> <span class="dv">5</span>)  <span class="co"># Or          # Output: True</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="kw">not</span>(x <span class="op">&gt;</span> <span class="dv">3</span> <span class="kw">and</span> y <span class="op">&lt;</span> <span class="dv">5</span>)) <span class="co"># Not    # Output: False</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="kw">and</span> y)  <span class="co"># Output: False</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="kw">or</span> y)   <span class="co"># Output: True</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="kw">not</span> x)    <span class="co"># Output: False</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>True
+True
+False
+False
+True
+False
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Bitwise operators: These operators are used to perform bitwise operations on binary values. Examples of bitwise operators in Python include &amp;, |, ^, ~, &lt;&lt;, and &gt;&gt;.</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span>  <span class="co"># 0b0101 in binary</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span>  <span class="co"># 0b0011 in binary</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform a bitwise AND operation on a and b</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> a <span class="op">&amp;</span> b</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)  <span class="co"># Output: 1 (0b0001 in binary)</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform a bitwise OR operation on a and b</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> a <span class="op">|</span> b</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)  <span class="co"># Output: 7 (0b0111 in binary)</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform a bitwise XOR operation on a and b</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> a <span class="op">^</span> b</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)  <span class="co"># Output: 6 (0b0110 in binary)</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform a bitwise NOT operation on a</span></span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="op">~</span>a</span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)  <span class="co"># Output: -6 (0b1010 in binary)</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1
+7
+6
+-6
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Understanding how to use operators is essential to programming in Python, as they allow you to manipulate values and variables in a variety of ways.</p>
+</div>
+<section id="5-loops-in-python" class="cell markdown">
+<h1>5. Loops in Python</h1>
+</section>
+<div class="cell markdown">
+<p>A loop is a programming construct that allows you to execute a set of statements repeatedly. There are two main types of loops in Python: for loop and while loop.</p>
+<p><code>for</code> loop A <code>for</code> loop is used to iterate over a sequence (such as a list, tuple, string, or range object) and execute a block of code for each element in the sequence. The basic syntax of a <code>for</code> loop in Python is:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#for variable in sequence:</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># code to execute for each element in sequence</span></span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Here, variable is a variable that takes on the value of each element in the sequence, one at a time. The code inside the loop is executed for each element in the sequence.</p>
+<p>For example, to print each element of a list, you could use a for loop like this:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> my_list:</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(item)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1
+2
+3
+4
+5
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><code>while</code> loop A <code>while</code> loop is used to repeatedly execute a block of code as long as a certain condition is true. The basic syntax of a <code>while</code> loop in Python is:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#while condition:</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># code to execute while condition is true</span></span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Here, <code>condition</code> is an expression that is evaluated at the beginning of each iteration of the loop. If the condition is true, the code inside the loop is executed. This process continues until the condition becomes false.</p>
+<p>For example, to print the numbers from 1 to 5 using a <code>while</code> loop, you could do this:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    i <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1
+2
+3
+4
+5
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>In this example, the loop continues to execute as long as i is less than or equal to 5.</p>
+</div>
+<section id="6-function-in-python" class="cell markdown">
+<h1>6. Function in Python</h1>
+</section>
+<div class="cell markdown">
+<p>A function is a block of code that performs a specific task and can be reused multiple times in a program. A function can be thought of as a self-contained mini-program that takes some input, processes it, and returns a result.</p>
+<p>In Python, functions are defined using the "def" keyword, followed by the name of the function and a set of parentheses. Inside the parentheses, you can specify any arguments that the function should accept. The body of the function is defined using indentation, and typically includes one or more statements that perform the desired task.</p>
+<p>Here is an example of a simple Python function that takes two arguments and returns their sum:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_numbers(x, y):</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> x <span class="op">+</span> y</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>This function can be called with two arguments, like this:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(add_numbers(<span class="dv">5</span>, <span class="dv">7</span>))  <span class="co"># Output: 12</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>12
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>In this example, the function "add_numbers" takes two arguments (x and y), adds them together, and returns the result. The function is then called with the values 5 and 7, and the result (12) is printed to the console using the "print" statement.</p>
+</div>
+<section id="7-module-in-python" class="cell markdown">
+<h1>7. Module in Python</h1>
+</section>
+<div class="cell markdown">
+<p>A module is a file containing Python definitions and statements. These files typically have a .py extension and can be used to group related functions, classes, and variables together, making it easier to organize and reuse code.</p>
+<p>A module can be imported into another Python script, allowing the functions and variables defined in the module to be used in the script. Python provides many standard modules that can be used to perform common tasks, such as working with files, handling dates and times, and performing mathematical calculations.</p>
+<p>To use a module in a Python script, you can use the <code>import</code> statement followed by the name of the module. For example, if you wanted to use the <code>math</code> module to perform some calculations, you would include the following line at the top of your script:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Once you have imported a module, you can access its functions and variables using dot notation. For example, to use the <code>sqrt</code> function from the <code>math</code> module, you would write:</p>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>This would assign the value 4.0 to the variable <code>x</code>.</p>
+</div>
+</body>
+</html>
