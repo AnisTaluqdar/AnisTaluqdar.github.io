@@ -6,14 +6,13 @@ author:
 - Anis Taluqdar
 meta: "Springfield"
 ---
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>248972</title>
+  <title>248974</title>
   <style>
     html {
       line-height: 1.5;
@@ -229,7 +228,7 @@ meta: "Springfield"
 <p>A comment is a piece of text that is added to the code for documentation or clarification purposes. Comments are ignored by the Python interpreter and are not executed as part of the program. They are used to make the code more readable and understandable for humans who are reading and maintaining the code.</p>
 <p>Comments in Python start with the # symbol and continue until the end of the line. For example:</p>
 </div>
-<div class="cell code" data-execution_count="1">
+<div class="cell code" data-execution_count="4">
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>) <span class="co"># This is another comment</span></span></code></pre></div>
 <div class="output stream stdout">
@@ -241,7 +240,7 @@ meta: "Springfield"
 <p>In the above example, the first line is a comment, and it is ignored by the Python interpreter. The second line is a code that prints the message "Hello, World!", but the part of the line after the # symbol is a comment and is also ignored by the interpreter.</p>
 <p>You can also create multiline comments in Python by using triple quotes ''' or """. For example:</p>
 </div>
-<div class="cell code" data-execution_count="2">
+<div class="cell code" data-execution_count="5">
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">This is a multiline comment in Python.</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">It can span across multiple lines.</span></span>
@@ -262,29 +261,20 @@ meta: "Springfield"
 <p>A variable is a name that refers to a value or an object in memory. It is a way to store and access data in a program. When you create a variable in Python, you assign a name to a value, which can be a number, a string, a list, a dictionary, or any other data type.</p>
 <p>To create a variable in Python, you simply choose a name for the variable and assign a value to it using the equal sign (=). For example, the following code creates a variable called "x" and assigns it the value of 5:</p>
 </div>
-<div class="cell markdown">
-<p>x = 5</p>
+<div class="cell code" data-execution_count="6">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span></code></pre></div>
 </div>
 <div class="cell markdown">
 <p>You can then use the variable in your code to perform operations or manipulate the data. For example, you can add 2 to the value of x and assign the result to a new variable called "y" like this:</p>
 </div>
-<div class="cell code" data-execution_count="3">
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span></code></pre></div>
-<div class="output error" data-ename="NameError" data-evalue="name &#39;x&#39; is not defined">
-<pre><code>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-Cell In[3], line 1
-----&gt; 1 y = x + 2
-
-NameError: name &#39;x&#39; is not defined
-</code></pre>
-</div>
+<div class="cell code" data-execution_count="7">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span></code></pre></div>
 </div>
 <div class="cell markdown">
 <p>The value of y will be 7, because it is the result of adding 2 to the value of x (which is 5).</p>
 <p>Variables in Python are dynamic, meaning that you can change the value of a variable at any time by assigning a new value to it. For example, you can change the value of x from 5 to 10 like this:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="8">
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span></code></pre></div>
 </div>
 <div class="cell markdown">
@@ -302,7 +292,7 @@ NameError: name &#39;x&#39; is not defined
 </ol>
 <p>Example:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="9">
 <div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span>  <span class="co"># int</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="fl">3.14</span>  <span class="co"># float</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">2</span> <span class="op">+</span> <span class="ot">3j</span>  <span class="co"># complex</span></span>
@@ -323,7 +313,7 @@ NameError: name &#39;x&#39; is not defined
 </ol>
 <p>Example:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="10">
 <div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -341,7 +331,7 @@ NameError: name &#39;x&#39; is not defined
 </ol>
 <p>Example:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="11">
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]  <span class="co"># list</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> (<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)  <span class="co"># tuple</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">2</span>)  <span class="co"># range</span></span>
@@ -362,7 +352,7 @@ NameError: name &#39;x&#39; is not defined
 </ol>
 <p>Example:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="12">
 <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}  <span class="co"># set</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">frozenset</span>({<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>})  <span class="co"># frozenset</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -380,7 +370,7 @@ NameError: name &#39;x&#39; is not defined
 </ol>
 <p>Example:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="13">
 <div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> {<span class="st">&quot;name&quot;</span>: <span class="st">&quot;John&quot;</span>, <span class="st">&quot;age&quot;</span>: <span class="dv">30</span>, <span class="st">&quot;city&quot;</span>: <span class="st">&quot;New York&quot;</span>}  <span class="co"># dict</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(a))  <span class="co"># Output: &lt;class &#39;dict&#39;&gt;</span></span></code></pre></div>
@@ -395,7 +385,7 @@ NameError: name &#39;x&#39; is not defined
 </ol>
 <p>Example:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="14">
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="st">b&#39;hello&#39;</span>  <span class="co"># bytes</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">bytearray</span>(<span class="st">b&#39;world&#39;</span>)  <span class="co"># bytearray</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">memoryview</span>(b)  <span class="co"># memoryview</span></span>
@@ -422,7 +412,7 @@ NameError: name &#39;x&#39; is not defined
 <div class="cell markdown">
 <p>Arithmetic operators: These operators are used to perform mathematical operations such as addition, subtraction, multiplication, division, modulus, and exponentiation. Examples of arithmetic operators in Python include +, -, *, /, %, and **.</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="15">
 <div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -445,7 +435,7 @@ NameError: name &#39;x&#39; is not defined
 <div class="cell markdown">
 <p>Comparison operators: These operators are used to compare values or variables and return a Boolean value (True or False) based on the comparison result. Examples of comparison operators in Python include ==, !=, &gt;, &lt;, &gt;=, and &lt;=.</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="16">
 <div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -468,7 +458,7 @@ False
 <div class="cell markdown">
 <p>Assignment operators: These operators are used to assign values to variables. Examples of assignment operators in Python include =, +=, -=, *=, /=, and %=.</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="17">
 <div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">+=</span> <span class="dv">5</span>      <span class="co"># Same as x = x + 5</span></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)    <span class="co"># Output: 15  </span></span>
@@ -496,7 +486,7 @@ False
 <div class="cell markdown">
 <p>Logical operators: These operators are used to perform logical operations on Boolean values (True or False). Examples of logical operators in Python include and, or, and not.</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="18">
 <div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -524,7 +514,7 @@ False
 <div class="cell markdown">
 <p>Bitwise operators: These operators are used to perform bitwise operations on binary values. Examples of bitwise operators in Python include &amp;, |, ^, ~, &lt;&lt;, and &gt;&gt;.</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="19">
 <div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span>  <span class="co"># 0b0101 in binary</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span>  <span class="co"># 0b0011 in binary</span></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -565,7 +555,7 @@ False
 <p>A loop is a programming construct that allows you to execute a set of statements repeatedly. There are two main types of loops in Python: for loop and while loop.</p>
 <p><code>for</code> loop A <code>for</code> loop is used to iterate over a sequence (such as a list, tuple, string, or range object) and execute a block of code for each element in the sequence. The basic syntax of a <code>for</code> loop in Python is:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="20">
 <div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#for variable in sequence:</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># code to execute for each element in sequence</span></span></code></pre></div>
 </div>
@@ -573,7 +563,7 @@ False
 <p>Here, variable is a variable that takes on the value of each element in the sequence, one at a time. The code inside the loop is executed for each element in the sequence.</p>
 <p>For example, to print each element of a list, you could use a for loop like this:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="21">
 <div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> my_list:</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(item)</span></code></pre></div>
@@ -589,7 +579,7 @@ False
 <div class="cell markdown">
 <p><code>while</code> loop A <code>while</code> loop is used to repeatedly execute a block of code as long as a certain condition is true. The basic syntax of a <code>while</code> loop in Python is:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="22">
 <div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#while condition:</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># code to execute while condition is true</span></span></code></pre></div>
 </div>
@@ -597,7 +587,7 @@ False
 <p>Here, <code>condition</code> is an expression that is evaluated at the beginning of each iteration of the loop. If the condition is true, the code inside the loop is executed. This process continues until the condition becomes false.</p>
 <p>For example, to print the numbers from 1 to 5 using a <code>while</code> loop, you could do this:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="23">
 <div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span>
@@ -622,7 +612,7 @@ False
 <p>In Python, functions are defined using the "def" keyword, followed by the name of the function and a set of parentheses. Inside the parentheses, you can specify any arguments that the function should accept. The body of the function is defined using indentation, and typically includes one or more statements that perform the desired task.</p>
 <p>Here is an example of a simple Python function that takes two arguments and returns their sum:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="24">
 <div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_numbers(x, y):</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> x <span class="op">+</span> y</span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div>
@@ -630,7 +620,7 @@ False
 <div class="cell markdown">
 <p>This function can be called with two arguments, like this:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="25">
 <div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(add_numbers(<span class="dv">5</span>, <span class="dv">7</span>))  <span class="co"># Output: 12</span></span></code></pre></div>
 <div class="output stream stdout">
 <pre><code>12
@@ -648,13 +638,13 @@ False
 <p>A module can be imported into another Python script, allowing the functions and variables defined in the module to be used in the script. Python provides many standard modules that can be used to perform common tasks, such as working with files, handling dates and times, and performing mathematical calculations.</p>
 <p>To use a module in a Python script, you can use the <code>import</code> statement followed by the name of the module. For example, if you wanted to use the <code>math</code> module to perform some calculations, you would include the following line at the top of your script:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="26">
 <div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span></code></pre></div>
 </div>
 <div class="cell markdown">
 <p>Once you have imported a module, you can access its functions and variables using dot notation. For example, to use the <code>sqrt</code> function from the <code>math</code> module, you would write:</p>
 </div>
-<div class="cell code">
+<div class="cell code" data-execution_count="27">
 <div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span></code></pre></div>
 </div>
 <div class="cell markdown">
