@@ -41,8 +41,8 @@ Theses
 
 Conference Papers
 -----------------
-- **A new approach to detect deepfake video using multi-input convolutional neural network** , 2022 4th International Conference on Sustaiable Technologies for Industry 4.0 (Paper ID 5830).
-  - with best paper award 
+- **A new approach to detect deepfake video using multi-input convolutional neural network** , 2022 4th International Conference on Sustaiable Technologies for Industry 4.0 (Paper ID 5830). 
+  - with best paper award [IEEEXplore](https://ieeexplore.ieee.org/abstract/document/10103229)
 
 
 
