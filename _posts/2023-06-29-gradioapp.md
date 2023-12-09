@@ -6,6 +6,6 @@ meta: "Springfield"
 
 
 <iframe
-    src="https://huggingface.co/spaces/NimaBoscarino/hotdog-gradio"
+    src="https://nimaboscarino-hotdog-gradio.hf.space"
     frameborder="0"
 ></iframe>
