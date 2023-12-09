@@ -1,8 +1,3 @@
----
-layout: default
-title: "Hot Dog"
-meta: "Springfield"
----
 
 
 <div style="width: 100%; height: 1000px;"> <!-- Example parent container -->
