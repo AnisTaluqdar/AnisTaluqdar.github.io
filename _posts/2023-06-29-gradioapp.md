@@ -1,11 +1,11 @@
 ---
 layout: default
-title: ""
+title: "nina"
 meta: "Springfield"
 ---
 
 
-<iframe
-    src="https://nimaboscarino-hotdog-gradio.hf.space"
-    frameborder="0"
-></iframe>
+<div style="width: 100%; height: 10000px;"> <!-- Example parent container -->
+    <iframe src="https://nimaboscarino-hotdog-gradio.hf.space" style="width: 100%; height: 100%;"></iframe>
+</div>
+
