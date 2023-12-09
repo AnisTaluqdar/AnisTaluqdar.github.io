@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "nina"
+title: "Hot Dog"
 meta: "Springfield"
 ---
 
